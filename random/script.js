@@ -121,7 +121,7 @@ let currentIndex = getRandomIndex(photos.length);
 
 function changePhoto() {
     currentIndex = (currentIndex + 1) % photos.length;
-    const newPhoto = photos[currentIndex];
+    const newPhoto = `random/${photos[currentIndex]}`; // Agrega "random/" al nombre de la imagen
     document.getElementById('random-photo').src = newPhoto;
 }
 
@@ -129,6 +129,16 @@ function changePhoto() {
 window.onload = function() {
     changePhoto();
 };
+
+// Agregar evento onclick al botón NEXT!
+document.getElementById('next-button').addEventListener('click', changePhoto);
+
+// Agregar evento onclick a toda la página para cambiar de imagen
+document.body.addEventListener('click', changePhoto);
+
+
+
+
 
 
 
