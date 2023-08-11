@@ -1,0 +1,55 @@
+body {
+    background-color: black;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    color: white;
+    cursor: pointer;
+    position: relative;
+}
+
+
+
+#photo-container {
+    
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; /* Alinea las imágenes arriba */
+    height: calc(70vh - 20px); /* Ajusta la altura y resta el margen vertical */
+    overflow: hidden; /* Evita que las imágenes más grandes desborden */
+    margin-bottom: 10px; /* Ajusta el margen entre la imagen y el botón */
+    margin-bottom: 140px;
+}
+
+#random-photo {
+    width: auto; /* Ajusta el ancho automáticamente */
+    height: 100%; /* Ajusta la altura al 100% del contenedor */
+    user-select: none;
+    -webkit-user-drag: none;
+    -webkit-touch-callout: none;
+    pointer-events: none;
+    object-fit: contain; /* Ajusta las imágenes al margen vertical */
+}
+
+#next-button {
+    background-color: #880000;
+    color: white; /* Cambiar a blanco */
+    border: 2px solid #550000;
+    padding: 20px 40px; /* Tamaño más grande */
+    text-transform: uppercase;
+    font-weight: bold;
+    cursor: pointer;
+    position: absolute;
+    bottom: 150px;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+}
+
+#ad-container {
+    /* Estilos para el contenedor del anuncio */
+}
+
